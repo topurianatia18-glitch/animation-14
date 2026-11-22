@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 100px;
+    font-family: "Manrope", sans-serif;
+    background-color: aliceblue;
+}
+
+.container {
+    margin:auto;
+    padding:5px  1px 1px 9px ;
+    width: 300px;
+    height: 500px;
+    border: 2px solid rgba(128, 142, 189, 0.341);
+    display: flex;
+    border-radius: 3%;
+    background-color: white;
+    animation: runningDiv 5s infinite 1s;
+
+}
+
+button {
+    width: 60px;
+    height: 25px;
+    margin: 10px;
+    background-color: white;
+    color: slategray;
+    border-radius: 20px;
+    border:0.5px solid rgba(112, 128, 144, 0.197);
+    
+}
+.lake {
+    width: 45px;
+}
+h2 {
+    margin: 10px;
+}
+p{
+    margin: 10px;
+    color:rgba(112, 128, 144, 0.405);
+}
+
+ .more {
+    background-color:rgba(46, 120, 239, 0.121);
+    width: 100px;
+    height: 35px;
+    color: rgba(5, 135, 241, 0.96);
+    font-size:10px;
+    border:0;
+    margin-left:90px;
+    padding:auto;
+    
+
+}
+img {
+    border-radius:8px;
+    width:280px;
+}
+@keyframes runningDiv {
+    from {
+        opacity: 0;
+        transform: rotate(5deg);
+        background-color: white;
+        transition: 2s;
+        scale: 0.5;
+        box-shadow: 50px 50px 50px 50px black;
+
+    }
+    to {
+        opacity: 1;
+        transform: rotate(-5deg);
+        background-color: rgba(128, 128, 128, 0.241);
+        transition: 1s;
+        scale: 1px;
+        box-shadow: 10px 10px 10px 10px black;
+    }
+
+}
